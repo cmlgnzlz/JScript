@@ -15,7 +15,6 @@ alert("Bienvenid@ a nuestro cotizador de creditos")
 let montoCredito = prompt("Cuanto dinero necesitas? El minimo a solicitar es de $10.000")
 let cuotaCredito = prompt("Ingresa la cantidad de cuotas que deseas (3, 6 o 12)")
 
-
 if(montoCredito<10000){
     alert("El credito debe ser de $10.000 como minimo")
 }else if(isNaN(montoCredito) || montoCredito=="0" || montoCredito==""){

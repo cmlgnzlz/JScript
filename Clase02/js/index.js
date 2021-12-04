@@ -5,4 +5,3 @@ if (ingreso == 7) {
 } else {
     alert("No era ese :C. Recarga para intentar nuevamente")
 }
-
