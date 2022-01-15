@@ -1,4 +1,4 @@
-import { calcular , mostrarCredito, limpiarInfo } from "./credito.js"
+import { calcular , mostrarCredito, limpiarInfo, clearCredito } from "./credito.js"
 
 /* interes por cada tipo de cuota */
 localStorage.setItem('interes1', 1.15);
@@ -16,8 +16,10 @@ simula.addEventListener("click", function(evt) {
     mostrarCredito();
     console.log(JSON.parse(sessionStorage.getItem('listaCreditos')))
 })
-/* borrar creditos mostrados del html */
+/* borrar creditos */
 const limpiar=document.getElementById('reset')
-limpiar.addEventListener("click", function() {
+limpiar.addEventListener("click", function(evt) {
+    console.log("limpiando")
     limpiarInfo()
+    clearCredito(evt)
 })

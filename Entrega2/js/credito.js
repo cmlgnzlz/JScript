@@ -49,6 +49,10 @@ export function limpiarInfo(){/* funcion que evita que se repitan los elementos 
     }
 }
 
+export function clearCredito(){/* borrar sessionStorage para limpiar array */
+    sessionStorage.clear('listaCreditos')
+}
+
 export function mostrarCredito() {/* funcion de muestra de datos con el DOM */
     var creditos = JSON.parse(sessionStorage.getItem('listaCreditos'))/* elementos del array */
     for (const credito of creditos){
