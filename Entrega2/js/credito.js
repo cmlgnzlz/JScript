@@ -14,21 +14,21 @@ export function calcular(){     /* funcion de calculo de credito */
         switch(cuotaCredito) {
             case 3:
                 creditoX.interes=JSON.parse(localStorage.getItem('interes1'));/* obteniendo valor de interes para esta cantidad de cuotas */
-                creditoX.calculoCredito1();/* funcion de calculo */
+                creditoX.calculoCredito();/* funcion de calculo */
                 sessionStorage.setItem('creditoN',JSON.stringify(creditoX));/* guardado de datos */
                 creditos.push(JSON.parse(sessionStorage.getItem('creditoN')));/* actualizacion de array */
                 sessionStorage.setItem('listaCreditos',JSON.stringify(creditos));/* guardado de array actualizado */
                 break;
             case 6:
                 creditoX.interes=JSON.parse(localStorage.getItem('interes2'));
-                creditoX.calculoCredito2();
+                creditoX.calculoCredito();
                 sessionStorage.setItem('creditoN',JSON.stringify(creditoX));
                 creditos.push(JSON.parse(sessionStorage.getItem('creditoN')));
                 sessionStorage.setItem('listaCreditos',JSON.stringify(creditos));
                 break;
             case 12:   
                 creditoX.interes=JSON.parse(localStorage.getItem('interes3'));
-                creditoX.calculoCredito3();
+                creditoX.calculoCredito();
                 sessionStorage.setItem('creditoN',JSON.stringify(creditoX));
                 creditos.push(JSON.parse(sessionStorage.getItem('creditoN')));
                 sessionStorage.setItem('listaCreditos',JSON.stringify(creditos));
@@ -70,22 +70,10 @@ class Credito{/* clase constructora */
         this.cuotaCredito = cuotaCredito; 
         this.interes = interes;
     }
-    calculoCredito1() {/* funcion de calculo */
+    calculoCredito() {/* funcion de calculo */
         this.monto =  this.montoCredito * this.interes;
         this.cuota = this.monto / this.cuotaCredito;
         this.monto = this.monto.toFixed(0);/* redondeo de monto total*/
         this.cuota = this.cuota.toFixed(0);/* redondeo de monto por cuota */
-    }
-    calculoCredito2() {
-        this.monto =  this.montoCredito * this.interes;
-        this.cuota = this.monto / this.cuotaCredito;
-        this.monto = this.monto.toFixed(0);
-        this.cuota = this.cuota.toFixed(0);
-    }
-    calculoCredito3() {
-        this.monto =  this.montoCredito * this.interes;
-        this.cuota = this.monto / this.cuotaCredito;
-        this.monto = this.monto.toFixed(0);
-        this.cuota = this.cuota.toFixed(0);
     }
 }
