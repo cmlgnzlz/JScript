@@ -1,0 +1,10 @@
+[{"id": 1,"ciudad":"Iquique", "direccion": "San Martín 301","horario":"09:00 a 14:00 Horas"},
+{"id":2, "ciudad":"Alto Hospicio","direccion":"Ramón Pérez 3167","horario":"09:00 a 14:00 Horas"},
+{"id":3, "ciudad":"Pozo Almonte","direccion":"Comercio 596","horario":"09:00 a 14:00 Horas"},
+{"id":4, "ciudad":"Pica","direccion":"Plaza de Armas 20-A","horario":"09:00 a 14:00 Horas"},
+{"id":5, "ciudad":"Fuerte Baquedano","direccion":"Panamericana Norte 1821","horario":"09:00 a 14:00 Horas"},
+{"id":6, "ciudad":"Antofagasta","direccion":"Av. Pedro Aguirre  8700, Local 21","horario":"09:00 a 14:00 Horas"},
+{"id":7, "ciudad":"Antofagasta","direccion":"Arturo Prat 400","horario":"09:00 a 14:00 Horas"},
+{"id":8, "ciudad":"Calama","direccion":"Sotomayor 1848","horario":"09:00 a 14:00 Horas"},
+{"id":9, "ciudad":"Taltal","direccion":"Eleuterio Ramírez 247","horario":"09:00 a 14:00 Horas"},
+{"id":10, "ciudad":"Tocopilla","direccion":"21 de Mayo 1901","horario":"09:00 a 14:00 Horas"}]
