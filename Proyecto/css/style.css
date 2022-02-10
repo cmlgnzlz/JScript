@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(255, 166, 0);
+}
+.header {
+    background-color: teal;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__credit {
+    text-align: center;
+}
+.header__credit h1{
+    font-family: "Raleway", sans-serif;
+    font-size: 5rem;
+    color: azure;
+    text-align: center;
+    text-decoration: orange;
+}
+.info__credit {
+    font-family: "Raleway", sans-serif;    
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.credit__welcome{
+    background-color: rgba(255, 166, 0, 0.171);
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.credit__welcome h2{
+  font-size: 2rem;
+  text-align: center;
+  color:rgb(110, 109, 189);
+  font-weight: 800;
+}
+.credit__welcome p{
+    font-size: 2rem;
+    text-align: center;
+    color:rgb(119, 130, 143);
+    font-weight: 800;
+}
+.credit__contenido{
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.contenido__content{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    background-color: teal;
+    color: rgb(255, 255, 255);
+}
+.contenido__content p{
+    font-size: 2rem;
+}
+
+.formulario {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(to right, #065f5f, teal);
+    color: whitesmoke;
+  }
+
+.formulario legend {
+  width: 100%;
+  font-size: 2.5em;
+  font-weight: 700;
+  background-image: linear-gradient(to right ,orange,rgb(167, 138, 86));
+  color: rgb(255, 255, 255);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+}
+.formulario label {
+  font-family: 'Raleway', sans-serif;
+  font-size: .8em;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+.formulario fieldset {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario #campo{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1em;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.formulario input {
+  width: 30em;
+}
+  
+.formulario select {
+  width: 200px;
+}
+
+.formulario [type="reset"] {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.formulario [type="submit"] {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.formulario fieldset p {
+  font-size: 1em;
+  font-weight: 500;
+  color: yellow;
+}
+.contenido__resultados{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido__resultados h2{
+  font-size: 2em;
+  color:rgb(110, 109, 189);
+  margin-top: 15px;
+  text-transform: capitalize;
+}
+.contenido__resultados h3{
+  font-size: 2em;
+  color:rgb(119, 130, 143);
+}
+.contenido__resultados h4{
+  font-size: 2em;
+  color:rgb(161, 134, 156);
+  margin-bottom: 20px;
+}
+.contenido__resultados h5{
+  font-size: 2em;
+  color:rgb(110, 109, 189);
+  margin-bottom: 20px;
+}
+
+#btnScrsl h3{
+  font-size: 2rem;
+  text-align: center;
+  color:rgb(231, 160, 66);
+  font-weight: 800;
+  margin: 1em;
+}
+
+#scrsl{/* boton */
+  width: 400px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sucursales{
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.scrsl  {
+  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(to right ,orange,rgb(245, 196, 106));
+  margin-bottom: 20px;
+  padding: 7px;
+  width: 200px;
+  margin: 5px;
+}
+
+.scrsl h2{
+  font-size: 1rem;
+  text-align: center;
+  color:rgb(66, 124, 231);
+  font-weight: 800;
+  margin: .8em;
+}
+.scrsl h3{
+  font-size: 1rem;
+  text-align: center;
+  color:rgb(30, 115, 172);
+  font-weight: 800;
+  margin: .5em;
+}
+.scrsl h4{
+  font-size: 1rem;
+  text-align: center;
+  color:whitesmoke;
+  font-weight: 600;
+  margin: .5em;
+}
