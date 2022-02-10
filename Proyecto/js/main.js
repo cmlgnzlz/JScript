@@ -36,12 +36,12 @@ $("#scrsl").click(function(evt){
     sucursales = true;
 });
 
+/* eliminar un credito en particular */
 $(".contenido__resultados").on('click',function(evt) {
-    console.log(evt.target.id)
-    let i = evt.target.id
-    console.log(i)
-    $("#" + evt.target.id).closest('div').remove()
+    const i = evt.target.id;
+    console.log(i);
+    $("#" + evt.target.id).closest('div').remove();
     var creditos = JSON.parse(sessionStorage.getItem('listaCreditos'));
-    console.log(creditos)
-    sessionStorage.setItem('listaCreditos',JSON.stringify(creditos))
+    var nuevosCreditos = creditos.filter((credito) => credito.boton !== i);
+    sessionStorage.setItem('listaCreditos',JSON.stringify(nuevosCreditos));
 })
