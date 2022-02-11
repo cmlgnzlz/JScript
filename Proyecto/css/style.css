@@ -189,13 +189,14 @@ html {
   flex-wrap: wrap;
   justify-content: center;
 }
-.scrsl  {
+.scrsl{
   font-family: 'Raleway', sans-serif;
   background-image: linear-gradient(to right ,orange,rgb(245, 196, 106));
   margin-bottom: 20px;
   padding: 7px;
   width: 200px;
   margin: 5px;
+  text-align: center;
 }
 
 .scrsl h2{

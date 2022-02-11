@@ -27,7 +27,7 @@
             <div class="credit__contenido"><!-- informacion de credito. aqui se agrega el div creado por funcion -->             
                 <div class="contenido__content">
                     <div class="formulario"><!-- formulario de credito -->
-                        <form action=""method="GET">
+                        <form id="form">
                             <fieldset>
                                 <legend>Informacion de tu credito</legend>
                                 <div id="campo">
@@ -47,19 +47,21 @@
                                     </select>
                                 </div>
                                 <div id="campo">
-                                    <input id="reset" type="reset" value="Limpiar">
+                                    <input id="reseteo" type="reset" value="Limpiar">
                                     <input id="submit" type="submit" value="Calcular"><!-- boton del llamado -->
                                 </div>
                            </fieldset>
                         </form>
                     </div>
-                    <div id="btnScrsl">
-                        <h3>O prefieres visitarnos en alguna de nuestras sucursales?</h3>
-                        <input id="scrsl" type="button" value="Mostrar Sucursales">
+                    <div id="sucursales">
+                        <div id="btnScrsl">
+                            <h3>O prefieres visitarnos en alguna de nuestras sucursales?</h3>
+                            <input id="scrsl" type="button" value="Mostrar Sucursales">
+                        </div>
+                        <div class="sucursales"></div>
                     </div>
                 </div>
                 <div class="contenido__resultados"></div>
-                <div class="sucursales"></div>
             </div>
         </div>
     </main>

@@ -44,7 +44,7 @@ export function limpiarInfo(){/* funcion que evita que se repitan los elementos 
     $('div .contenido__resultados').empty();
     $('div .scrsl').remove();
 }
-        
+       
 export function clearCredito(){/* borrar sessionStorage para limpiar array */
     sessionStorage.clear('listaCreditos');
     let creditos = [];
@@ -56,19 +56,20 @@ export function clearCredito(){/* borrar sessionStorage para limpiar array */
 export function mostrarCredito() {/* funcion de muestra de datos con el DOM con JQuery*/
     var creditos = JSON.parse(sessionStorage.getItem('listaCreditos'));/* elementos del array */
     for (const credito of creditos){
-        $(".contenido__resultados").append(
+        $('.contenido__resultados').prepend(
             `<div id="mostrar${credito.contador}">
             <h2> <strong>${credito.nombre}</strong>,</h2>
             <h4> tu crédito es el siguiente:</h4>
             <h3> Si solicitas ${new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(credito.montoCredito)} en ${credito.cuotaCredito} cuotas</h3>
             <h4> Cada una será de ${new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(credito.cuota)}</h4>
             <h5> Por un total de ${new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(credito.monto)}</h5>
-            <button id="x${credito.contador}" class="cerrar">X</button></div>`
+            <button id="x${credito.contador}" class="cerrar">CERRAR</button></div>`
             )
-        $("#mostrar" + credito.contador).css({
+        $('#mostrar' + credito.contador).css({
             "font-family":"'Raleway', sans-serif","background-image":"linear-gradient(to right ,orange,rgb(245, 196, 106))",
             "margin-bottom":"20px","padding-top":"5px","padding-bottom":"5px","width":"80%"})
     }
+    $('#form')[0].reset();
 }
 
 export function mostrarSucursales(){/* funcion con metodo GET de AJAX */
@@ -79,14 +80,13 @@ export function mostrarSucursales(){/* funcion con metodo GET de AJAX */
         }
         if(estado === "success"){
             for (const sucursal of respuesta) {
-                    $(".sucursales").prepend(`<div class="scrsl">
+                    $('.sucursales').append(`<div class="scrsl">
                                             <h2> ${sucursal.ciudad}</h2>
                                             <h3> ${sucursal.direccion}</h3>
                                             <h4> ${sucursal.horario}</h4>
                                         </div>`);
                     }  
         }
-        
     });
 }
 
