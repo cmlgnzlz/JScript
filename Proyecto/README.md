@@ -1,12 +1,11 @@
-# JavaScript
-Comisión 20000
+# JavaScript - Comisión 20000
 
 Profesor: Tomas Chorroarin
 
 Tutor: Nicolás Krein
 
 
-Proyecto Final
+# Proyecto Final
 
 Cotizador de creditos
 
